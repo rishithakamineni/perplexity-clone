@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iridescent AI</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-top">
+                <button class="icon-btn menu-toggle">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+            <div class="sidebar-middle">
+                <button class="new-chat-btn">
+                    <span class="material-symbols-outlined">add</span>
+                </button>
+            </div>
+            <div class="sidebar-bottom">
+                <button class="icon-btn">
+                    <span class="material-symbols-outlined">settings</span>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="top-nav">
+                <div class="logo-area">
+                    <span class="logo-text">Iridescent AI</span>
+                </div>
+                <div class="header-actions">
+                    <button class="upgrade-btn">
+                        <span class="sparkle-icon">✨</span>
+                        Upgrade to Google AI Plus
+                    </button>
+                    <div class="user-avatar">R</div>
+                </div>
+            </header>
+
+            <!-- Chat/Hero Section -->
+            <section class="main-display">
+                <div id="chat-history" class="chat-history">
+                    <!-- Messages will be injected here -->
+                    <div class="hero">
+                        <div class="greeting">
+                            <span class="sparkle-gradient">✦</span>
+                            <h2 id="user-greeting">Hi Rishitha</h2>
+                        </div>
+                        <h1 class="hero-text">I'm ready to help you plan, study, bring ideas to life and more.</h1>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Search Area -->
+            <section class="search-section">
+                <div class="search-container">
+                    <div class="search-input-wrapper">
+                        <textarea placeholder="Ask Iridescent AI" id="main-input" rows="1"></textarea>
+                        <!-- PDF Context Indicator -->
+                        <div id="pdf-indicator" class="pdf-indicator" style="display: none;">
+                            <span class="material-symbols-outlined">description</span>
+                            <span class="pdf-name">document.pdf</span>
+                            <button id="remove-pdf" class="remove-pdf-btn">×</button>
+                        </div>
+                    </div>
+                    <div class="search-controls">
+                        <div class="left-controls">
+                            <!-- Hidden File Input -->
+                            <input type="file" id="file-upload" accept=".pdf" style="display: none;">
+                            <button class="control-btn" id="attach-btn"><span class="material-symbols-outlined">attach_file</span></button>
+                            <button class="control-btn tools-btn">
+                                <span class="material-symbols-outlined">construction</span>
+                                Tools
+                                <span class="dot-indicator"></span>
+                            </button>
+                        </div>
+                        <div class="right-controls">
+                            <div class="status-dropdown">
+                                <span>Fast</span>
+                                <span class="material-symbols-outlined">expand_more</span>
+                            </div>
+                            <button class="mic-btn"><span class="material-symbols-outlined">mic</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Actions Chips -->
+                <div class="chips-grid">
+                    <button class="chip">
+                        <span class="material-symbols-outlined chip-icon icon-image">image</span>
+                        Create image
+                    </button>
+                    <button class="chip">
+                        <span class="material-symbols-outlined chip-icon icon-cricket">sports_cricket</span>
+                        Follow IPL
+                    </button>
+                    <button class="chip">
+                        <span class="material-symbols-outlined chip-icon icon-music">music_note</span>
+                        Create music
+                    </button>
+                    <button class="chip">Write anything</button>
+                    <button class="chip">Boost my day</button>
+                    <button class="chip">Help me learn</button>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="/static/main.js"></script>
+</body>
+</html>
