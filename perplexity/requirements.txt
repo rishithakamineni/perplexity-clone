@@ -1,0 +1,7 @@
+flask
+flask-cors
+google-generativeai
+PyPDF2
+beautifulsoup4
+wikipedia
+requests
